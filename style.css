@@ -1,0 +1,141 @@
+/* الألوان: أسود (خلفية) - أحمر - أبيض */
+:root {
+  --black: #000000;
+  --red: #e10600;
+  --white: #ffffff;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+  line-height: 1.8;
+}
+
+/* العنوان */
+.site-header {
+  text-align: center;
+  padding: 28px 12px 12px;
+}
+.logo {
+  font-size: clamp(2rem, 8vw, 4rem);
+  letter-spacing: 3px;
+  color: var(--white);
+  direction: ltr;
+}
+.logo span { color: var(--red); }
+
+/* شريط التنقل */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px;
+  background: var(--black);
+  border-top: 2px solid var(--red);
+  border-bottom: 2px solid var(--red);
+  direction: ltr;
+  flex-wrap: wrap;
+}
+.navbar a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 8px 18px;
+  border: 1px solid var(--red);
+  border-radius: 999px;
+  font-weight: 600;
+  transition: background .2s;
+}
+.navbar a:hover,
+.navbar a.active {
+  background: var(--red);
+}
+
+/* الفيد */
+.feed {
+  max-width: 640px;
+  margin: 24px auto;
+  padding: 0 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.post {
+  border: 1px solid var(--red);
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--black);
+}
+.post-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+}
+.avatar {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: var(--red);
+  display: grid; place-items: center;
+  font-weight: 700;
+}
+.post-meta small { color: var(--white); opacity: .6; display: block; line-height: 1.2; }
+.post-meta strong { color: var(--white); }
+
+.post-title {
+  padding: 0 14px 10px;
+  font-size: 1.3rem;
+  color: var(--red);
+}
+.post img {
+  width: 100%;
+  display: block;
+  border-top: 1px solid var(--red);
+  border-bottom: 1px solid var(--red);
+}
+.post-body {
+  padding: 14px;
+  white-space: pre-line;
+}
+.post-body.collapsed {
+  max-height: 7.5em;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(#000 60%, transparent);
+          mask-image: linear-gradient(#000 60%, transparent);
+}
+.read-more {
+  margin: 0 14px 14px;
+  background: var(--red);
+  color: var(--white);
+  border: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.read-more:hover { background: var(--white); color: var(--red); }
+
+/* التواصل */
+.contact {
+  max-width: 640px;
+  margin: 24px auto;
+  padding: 20px;
+  border: 1px solid var(--red);
+  border-radius: 14px;
+}
+.contact h2 { color: var(--red); margin-bottom: 8px; }
+.contact ul { margin-top: 10px; padding-right: 20px; }
+.contact a { color: var(--red); }
+
+.footer {
+  text-align: center;
+  padding: 24px;
+  opacity: .6;
+  font-size: .9rem;
+}
