@@ -5,7 +5,7 @@
 const posts = [
   { id: 10, title: "ابحر معنا في بحر الألعاب المقرصنة والمكركة", category: "games",    date: "2026-10-09", likes: 238 },
   { id: 9, title: "تاريخ سلسلة Call of Duty الشهيرة",       category: "games",       date: "2026-10-09", likes: 192 },
-  { id: 8, title: "الأسطورة Docker",                       category: "programming", date: "2026-10-09", likes: 176 },
+  { id: 8, title: "شرح Docker container",                       category: "programming", date: "2026-10-09", likes: 176 },
   { id: 7, title: "اختيار محرر الأكواد المناسب",            category: "programming", date: "2026-10-09", likes: 131 },
   { id: 6, title: "أزمة الرامات العالمية",                  category: "programming", date: "2026-10-09", likes: 94  },
   { id: 1, title: "البرمجة مع الـ AI",                    category: "programming", date: "2026-10-09", likes: 142 },
