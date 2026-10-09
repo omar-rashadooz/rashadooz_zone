@@ -3,7 +3,7 @@
 // likes: العدد الأساسي للايكات (بيزيد عليه رقم عشوائي صغير مع كل زيارة)
 // خبر جديد: ضيف سطر هنا + صورة photo_numX.png + مقال subject_numX.txt
 const posts = [
-  { id: 8, title: "الأسطورة Docker",                        category: "programming", date: "2026-10-09", likes: 176 },
+  { id: 8, title: "Docker Containers",                        category: "programming", date: "2026-10-09", likes: 176 },
   { id: 7, title: "اختيار محرر الأكواد المناسب",            category: "programming", date: "2026-10-09", likes: 131 },
   { id: 6, title: "أزمة الرامات العالمية",                  category: "programming", date: "2026-10-09", likes: 94  },
   { id: 1, title: "البرمجة مع الـ AI",                    category: "programming", date: "2026-10-09", likes: 142 },
