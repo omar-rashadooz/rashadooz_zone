@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RASHADOOZ ZONE</title>
+  <link rel="icon" type="image/png" href="logo.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,23 +14,34 @@
   </header>
 
   <nav class="navbar">
-    <a href="#home" data-filter="all" class="active">Home</a>
+    <a href="#home" data-filter="home" class="active">Home</a>
     <a href="#programming" data-filter="programming">Programming</a>
     <a href="#games" data-filter="games">Games</a>
     <a href="#contact" data-filter="contact">Contact Us</a>
   </nav>
 
   <main>
+    <!-- Home: صفحة ترحيب فاضية -->
+    <section id="home" class="hero">
+      <img class="hero-logo" src="logo.png" alt="RASHADOOZ logo">
+      <h2 class="hero-title">مركزك الأول لأخبار <span>البرمجة</span> و<span>الألعاب</span></h2>
+      <p class="hero-sub">اكتشف أحدث الأخبار والمقالات عن البرمجة والذكاء الاصطناعي وعالم الألعاب في مكان واحد.</p>
+      <div class="hero-buttons">
+        <a href="#programming" class="btn btn-red" data-go="programming">Programming</a>
+        <a href="#games" class="btn btn-outline" data-go="games">Games</a>
+      </div>
+    </section>
+
     <!-- الفيد: بيتبني من script.js -->
-    <section id="feed" class="feed"></section>
+    <section id="feed" class="feed" hidden></section>
 
     <!-- صفحة التواصل -->
     <section id="contact" class="contact" hidden>
       <h2>Contact Us</h2>
       <p>تواصل معانا في أي وقت:</p>
       <ul>
-        <li>البريد: <a href="mailto:your@email.com">omarmrashad92@gmail.com</a></li>
-        <li>ديسكورد: <span>RASHADOOZ#0000</span></li>
+        <li>البريد: <a href="mailto:your@email.com">your@email.com</a></li>
+        <li>ديسكورد: <span>YourName#0000</span></li>
       </ul>
     </section>
   </main>
