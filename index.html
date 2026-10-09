@@ -20,6 +20,10 @@
     <a href="#contact" data-filter="contact">Contact Us</a>
   </nav>
 
+  <div class="search-bar">
+    <input id="search" type="search" placeholder="ابحث في الأخبار..." autocomplete="off" aria-label="بحث">
+  </div>
+
   <main>
     <!-- Home: صفحة ترحيب فاضية -->
     <section id="home" class="hero">
@@ -30,6 +34,9 @@
         <a href="#programming" class="btn btn-red" data-go="programming">Programming</a>
         <a href="#games" class="btn btn-outline" data-go="games">Games</a>
       </div>
+
+      <!-- آخر خبر في كل قسم: بيتبني من script.js -->
+      <div id="latest" class="latest"></div>
     </section>
 
     <!-- الفيد: بيتبني من script.js -->
