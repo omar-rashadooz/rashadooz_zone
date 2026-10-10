@@ -1,3 +1,17 @@
+/* الخط: Cairo (ملفات Cairo-Bold.ttf و Cairo-Black.ttf في نفس الفولدر) */
+@font-face {
+  font-family: "Cairo";
+  src: url("Cairo-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cairo";
+  src: url("Cairo-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+}
+
 /* الألوان: أسود (خلفية) - أحمر - أبيض */
 :root {
   --black: #000000;
@@ -11,9 +25,10 @@
 body {
   background: var(--black);
   color: var(--white);
-  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+  font-family: "Cairo", "Segoe UI", Tahoma, Arial, sans-serif;
   line-height: 1.8;
 }
+button { font-family: inherit; }
 
 /* العنوان */
 .site-header {
@@ -23,6 +38,7 @@ body {
 .logo {
   font-size: clamp(2rem, 8vw, 4rem);
   letter-spacing: 3px;
+  font-weight: 900;
   color: var(--white);
   direction: ltr;
 }
@@ -100,6 +116,7 @@ body {
 }
 .hero-title {
   font-size: clamp(1.8rem, 7vw, 2.8rem);
+  font-weight: 900;
   line-height: 1.4;
 }
 .hero-title span { color: var(--red); }
