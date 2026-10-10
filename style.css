@@ -221,7 +221,8 @@ button { font-family: inherit; }
 
 .post-title {
   padding: 0 14px 10px;
-  font-size: 1.3rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
   color: var(--red);
 }
 .post img.post-img {
@@ -232,6 +233,7 @@ button { font-family: inherit; }
 }
 .post-body {
   padding: 14px;
+  font-size: .95rem;
   white-space: pre-line;
 }
 .post-body.collapsed {
@@ -265,6 +267,7 @@ button { font-family: inherit; }
 .post-link { display: block; color: inherit; text-decoration: none; }
 .post-excerpt {
   padding: 14px 14px 10px;
+  font-size: .9rem;
   opacity: .85;
 }
 .post-excerpt:empty { display: none; }
@@ -279,7 +282,7 @@ button { font-family: inherit; }
   align-self: flex-start;
 }
 .back-link:hover { background: var(--red); }
-.post-title-lg { font-size: 1.6rem; line-height: 1.5; }
+.post-title-lg { font-size: 1.35rem; line-height: 1.6; }
 
 .like-btn {
   background: transparent;
