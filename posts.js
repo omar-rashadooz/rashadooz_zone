@@ -3,7 +3,7 @@
 // likes: العدد الأساسي للايكات (بيزيد عليه رقم عشوائي صغير مع كل زيارة)
 // خبر جديد: ضيف سطر هنا + صورة photo_numX.png + مقال subject_numX.txt
 const posts = [
-  { id: 12, title: "هل يقضي GTA 6 على أسطورة القصة الفردية؟",   category: "games",       date: "2026-10-10", likes: 164 },
+  { id: 12, title: "هل تقتل روكستار روح السلسلة؟ الحقيقة الصادمة خلف مستقبل GTA 6",   category: "games",       date: "2026-10-10", likes: 164 },
   { id: 11, title: "تايبسكريبت تهدد عرش جافاسكريبت",            category: "programming", date: "2026-10-10", likes: 149 },
   { id: 10, title: "ابحر معنا في بحر الألعاب المقرصنة والمكركة", category: "games",    date: "2026-10-09", likes: 238 },
   { id: 9, title: "تاريخ سلسلة Call of Duty الشهيرة",       category: "games",       date: "2026-10-09", likes: 192 },
